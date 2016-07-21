@@ -1,3 +1,8 @@
+//Name:Jesse Chhun
+//Class:cs536 programming for gis
+//assignment:build a small gui interface to switch between 3 different tabs in jswing
+
+
 package tabby;
 import javax.swing.*;
 import javax.swing.event.*;
@@ -14,7 +19,7 @@ public class JFramTabbedPane extends JFrame {
         System.exit(0);
       }
     });
-//first tab 
+//first tab
 final JPanel panelDice = new JPanel();
 final JPanel imagedice=new JPanel();
 panelDice.setLayout(new BorderLayout());
@@ -66,23 +71,23 @@ red.addMouseListener(new MouseListener(){
 	}
 	@Override
 	public void mouseExited(MouseEvent arg0) {
-		imagemouse.setBackground(Color.WHITE);		
+		imagemouse.setBackground(Color.WHITE);
 	}
 	@Override
 	public void mousePressed(MouseEvent arg0) {
-		// TODO Auto-generated method stub	
+		// TODO Auto-generated method stub
 	}
 	@Override
 	public void mouseReleased(MouseEvent arg0) {
-		// TODO Auto-generated method stub		
+		// TODO Auto-generated method stub
 	}
 });
 blue.addMouseListener(new MouseListener(){
-	public void mouseMoved(MouseEvent e){		
+	public void mouseMoved(MouseEvent e){
 	}
 	@Override
 	public void mouseClicked(MouseEvent e) {
-		// TODO Auto-generated method stub	
+		// TODO Auto-generated method stub
 	}
 	@Override
 	public void mouseEntered(MouseEvent e) {
@@ -94,23 +99,23 @@ blue.addMouseListener(new MouseListener(){
 	}
 	@Override
 	public void mousePressed(MouseEvent e) {
-		// TODO Auto-generated method stub	
+		// TODO Auto-generated method stub
 	}
 	@Override
 	public void mouseReleased(MouseEvent e) {
-		// TODO Auto-generated method stub	
+		// TODO Auto-generated method stub
 	}
 });
 green.addMouseListener(new MouseListener(){
-	public void mouseMoved(MouseEvent e){	
+	public void mouseMoved(MouseEvent e){
 	}
 	@Override
 	public void mouseClicked(MouseEvent e) {
-		// TODO Auto-generated method stub	
+		// TODO Auto-generated method stub
 	}
 	@Override
 	public void mouseEntered(MouseEvent e) {
-		imagemouse.setBackground(Color.GREEN);	
+		imagemouse.setBackground(Color.GREEN);
 	}
 	@Override
 	public void mouseExited(MouseEvent e) {
@@ -118,23 +123,23 @@ green.addMouseListener(new MouseListener(){
 	}
 	@Override
 	public void mousePressed(MouseEvent e) {
-		// TODO Auto-generated method stub	
+		// TODO Auto-generated method stub
 	}
 	@Override
 	public void mouseReleased(MouseEvent e) {
-		// TODO Auto-generated method stub	
+		// TODO Auto-generated method stub
 	}
 });
 yellow.addMouseListener(new MouseListener(){
-	public void mouseMoved(MouseEvent e){	
+	public void mouseMoved(MouseEvent e){
 	}
 	@Override
 	public void mouseClicked(MouseEvent e) {
-		// TODO Auto-generated method stub	
+		// TODO Auto-generated method stub
 	}
 	@Override
 	public void mouseEntered(MouseEvent e) {
-		imagemouse.setBackground(Color.YELLOW);	
+		imagemouse.setBackground(Color.YELLOW);
 	}
 	@Override
 	public void mouseExited(MouseEvent e) {
@@ -142,11 +147,11 @@ yellow.addMouseListener(new MouseListener(){
 	}
 	@Override
 	public void mousePressed(MouseEvent e) {
-		// TODO Auto-generated method stub	
+		// TODO Auto-generated method stub
 	}
 	@Override
 	public void mouseReleased(MouseEvent e) {
-		// TODO Auto-generated method stub	
+		// TODO Auto-generated method stub
 	}
 });
 // third tab
@@ -173,15 +178,15 @@ Red.addActionListener(new ActionListener(){
 			Display.setBackground(Color.RED);
 		else
 			Display.setBackground(Color.WHITE);
-	} 		
+	}
 });
-Blue.addActionListener(new ActionListener(){ 
+Blue.addActionListener(new ActionListener(){
 	public void actionPerformed(ActionEvent e) {
 		if (Blue.isSelected())
 			Display.setBackground(Color.BLUE);
 		else
 			Display.setBackground(Color.WHITE);
-     }		
+     }
 });
 Yellow.addActionListener(new ActionListener() {
 	public void actionPerformed(ActionEvent e){
@@ -189,7 +194,7 @@ Yellow.addActionListener(new ActionListener() {
 		Display.setBackground(Color.YELLOW);
 	else
 		Display.setBackground(Color.WHITE);
-   }	
+   }
 });
 
 JTabbedPane jtp = new JTabbedPane();
